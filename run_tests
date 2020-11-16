@@ -5,9 +5,9 @@ from pathlib import Path
 
 def main() -> int:
 
-    for test in Path().rglob("*/**/test"):
+    for test in Path().rglob("*/**/run"):
         print(f"Running {test}")
-        subprocess.check_call("./test", cwd=test.parent)
+        subprocess.check_call("./run", cwd=test.parent)
 
     return 0
 
