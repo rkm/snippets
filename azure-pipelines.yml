@@ -1,0 +1,16 @@
+trigger:
+- "*"
+
+jobs:
+  - job: run_tests
+    displayName: Run tests
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.9.*'
+        addToPath: true
+        architecture: 'x64'
+    - task: Bash@3
+      inputs:
+        filePath: './run_tests'
+        failOnStderr: true
