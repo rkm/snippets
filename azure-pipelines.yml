@@ -1,16 +1,16 @@
 trigger:
-    - "*"
+  - "*"
 
 jobs:
-    - job: run_tests
-      displayName: Run tests
-      steps:
-          - task: UsePythonVersion@0
-            inputs:
-                versionSpec: "3.9.*"
-                addToPath: true
-                architecture: "x64"
-          - task: CmdLine@2
-            inputs:
-                script: "./run_tests"
-                failOnStderr: true
+  - job: run_tests
+    displayName: Run tests
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: "3.9.*"
+          addToPath: true
+          architecture: "x64"
+      - task: CmdLine@2
+        inputs:
+          script: "./run_tests"
+          failOnStderr: true
