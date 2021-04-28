@@ -89,7 +89,7 @@ repos:
       - id: mypy
         args: [--config-file, .meta/mypy.ini]
   - repo: https://github.com/psf/black
-    rev: "21.4b0"
+    rev: "21.4b1"
     hooks:
       - id: black
         language_version: python38
