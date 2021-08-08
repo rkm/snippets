@@ -1,5 +1,10 @@
 # Python Snippets
 
+## Tools
+
+-   pre-commit
+-   https://github.com/asottile/covdefaults
+
 ## Testing CLI entry point with argparse
 
 Allows argv to be overridden by tests or other scripts which import main. Falls
