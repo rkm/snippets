@@ -16,7 +16,6 @@ def _run(cmd: Sequence[_STR_LIKE]) -> None:
 
 
 def main() -> int:
-
     url = (
         f"https://git.rockylinux.org/api/v4/groups/"
         f"{_PATCH_GROUP_ID}"
