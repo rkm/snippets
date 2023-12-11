@@ -2,8 +2,8 @@
 
 ## Tools
 
--   pre-commit
--   https://github.com/asottile/covdefaults
+- pre-commit
+- https://github.com/asottile/covdefaults
 
 ## Testing CLI entry point with argparse
 
